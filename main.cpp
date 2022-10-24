@@ -19,7 +19,7 @@ if (a !=0)
 else  if (a==0)
 
 {
-	cout<<"a nie mo¿ê byæ 0";
+	cout<<"a nie mo¿ê byæ 0 podaj a >0";
 }
 	return 0;
 }
