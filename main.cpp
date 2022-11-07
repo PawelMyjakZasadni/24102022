@@ -21,7 +21,8 @@ int main()
   cout<<"podaj n = 1 funkcja liniowa  "<<endl;
    cout<<"podaj n = 2 miejsce zerowe funkcji  "<<endl;
    cout<<"podaj n = 3 funkcja kwadraatowa  "<<endl;
- cin>>n;
+   cout<<"podaj n = 4 miejsca zerowe oblicz w postaci kanonicznej   "<<endl;
+  cout<<"podaj co ma sie wykonaæ "; cin>>n;
 if (n==1)
 	{
 		cin>>a;
@@ -131,6 +132,33 @@ else if(a==0)
 		cout<<"funkcja rosnie +";
 	}
 }
+}
+else if(n==4 )
+{
+	int p,q,x1,x2;
+ 	
+
+ 			cout<<"\na=";
+ 			cin>>a;
+ 			
+ 				cout<<"\np=";
+ 			cin>>p;
+ 			
+ 				cout<<"\nq=";
+ 			cin>>q;
+ 			if((-q/a)<0)
+ 			{
+ 				cout<<"a musi byc wieksze od 0;";
+			 }
+		 
+	 if(a>0)
+	 {
+	 	x1=p+sqrt(-q/a);
+	 	x2=p-sqrt(-q/a);
+	 	
+	 	cout<<x1<<"x1"<<endl;
+	 	cout<<x2<<"x2"<<endl;
+	 }
 }
 	return 0;
 }
