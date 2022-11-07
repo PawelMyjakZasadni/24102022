@@ -113,7 +113,7 @@ system ("pause");
 
 else if(a==0)  
 {
-cout<<"tu liczy ";	
+	
  
 	if(b>0)
 	{
@@ -128,7 +128,7 @@ cout<<"tu liczy ";
 	else if(b==0)
 	{
 		cout<<"brak miejsca";
-		cout<<"funkcja rosnie";
+		cout<<"funkcja rosnie +";
 	}
 }
 }
