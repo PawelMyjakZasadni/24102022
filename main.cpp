@@ -85,8 +85,9 @@ cout<<"Podaj b: ";
 cin>>b;
 cout<<"Podaj c: ";
 cin>>c;
+	if(a!=0){
 
-if (delta(a,b,c)<0)
+		if (delta(a,b,c)<0)
       {cout<<"Rownanie nie ma rozwiazan \n";}
       else if (delta(a,b,c)==0)
         {cout<<"Jest tylko jedno rozwiazanie:\n x="<<e(a,b);
@@ -95,11 +96,11 @@ if (delta(a,b,c)<0)
             {cout<<"Sa dwa rozwiazania rowne: \n"<<"x1="<<pierwX1(a,b,delta(a,b,c));
             cout<<"\n"<<"x2="<<pierwX2(a,b,delta(a,b,c));
             cout<<"\n";}
-if (a==0)
+		if (a==0)
    {
           cout<<"X jest rowne:"<<xliniowe(c,b);
           cout<<"\n";}
-   else
+  	 else
    {
        d=delta(a,b,c);
        cout<<"Delta rownania wynosi:"<<d;
@@ -107,10 +108,30 @@ if (a==0)
        
 }
 system ("pause");
-}
+
+	}
+
+else if(a==0)  
+{
+cout<<"tu liczy ";	
  
-
-
+	if(b>0)
+	{
+		cout<<"miejsce zerowe"<<pierwX1(a,b,delta(a,b,c));
+		cout<<"funkcja rosnie";
+	}
+	 else if(b>0)
+	{
+		cout<<"miejsce zerowe"<<pierwX1(a,b,delta(a,b,c));
+		cout<<"funkcja maleje";
+	}
+	else if(b==0)
+	{
+		cout<<"brak miejsca";
+		cout<<"funkcja rosnie";
+	}
+}
+}
 	return 0;
 }
 
